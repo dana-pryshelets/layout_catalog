@@ -2,7 +2,7 @@
 
 .main {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   padding: 50px 40px 28px;
 }
 
@@ -24,12 +24,20 @@
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   padding-bottom: 50px;
+  padding-top: 16px;
 
   &__image {
-    display: block;
-    width: 160px;
-    height: 134px;
-    margin: 32px 19px 40px;
+    width: 166px;
+    height: 164px;
+    padding: 10px 0;
+    margin: 0 16px 40px;
+    transition: transform 0.4s;
+
+    &:hover {
+      border: 3px solid #f3f3f3 ;
+      border-radius: 5px;
+      transform: scale(120%);
+    }
   }
 
   &__name {
@@ -91,10 +99,11 @@
     background-color: #00acdc;
     border-radius: 5px;
     color: #fff;
-  }
+    transition-duration: 400ms;
 
-  &__button:hover {
-    color: #00acdc;
-    background-color: #fff;
+    &:hover {
+      color: #00acdc;
+      background-color: #fff;
+    }
   }
 }
