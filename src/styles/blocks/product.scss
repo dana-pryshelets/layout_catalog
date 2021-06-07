@@ -2,16 +2,14 @@
 
 .main {
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   padding: 50px 40px 28px;
 }
 
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  max-width: 944px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
 
   &__product {
     padding-bottom: 50px;
@@ -24,13 +22,14 @@
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   padding-bottom: 50px;
+  padding-top: 12px;
 
   &__image {
-    display: block;
-    width: 160px;
-    height: 134px;
-    margin: 32px 19px 40px;
-    transition-duration: 400ms;
+    width: 166px;
+    height: 164px;
+    padding: 10px 0;
+    margin: 0 16px 40px;
+    transition: transform 0.4s;
 
     &:hover {
       border: 3px solid #f3f3f3 ;
@@ -98,7 +97,7 @@
     background-color: #00acdc;
     border-radius: 5px;
     color: #fff;
-    transition-duration: 0.5s;
+    transition-duration: 400ms;
 
     &:hover {
       color: #00acdc;
