@@ -10,10 +10,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 48px;
-
-  &__product {
-    padding-bottom: 50px;
-  }
 }
 
 .product {
@@ -21,7 +17,7 @@
   max-width: $product-card-width;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding-bottom: 50px;
+  
   padding-top: 12px;
 
   &__image {
